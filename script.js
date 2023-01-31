@@ -1,7 +1,7 @@
 "use strict";
 
 let button, row;
-const CHAR_LIMIT = 15;
+const CHAR_LIMIT = document.body.clientWidth < 700 ? 12 : 15;
 const LARGE_NUM = 1000000000000000;
 
 const buttons = [
