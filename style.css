@@ -23,6 +23,7 @@ html {
 }
 
 body {
+    position: relative;
     font-size: 1.6rem;
     color: var(--white-color);
     background-color: var(--black-color);
@@ -38,6 +39,35 @@ footer {
 @media screen and (max-width: 768px) {
     html {
         font-size: 10px;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .container {
+        height: auto !important;
+        padding-top: 5rem !important;
+        display: block !important;
+    }
+
+    .btn {
+        height: 5rem !important;
+        font-size: 2rem !important;
+    }
+
+    .answer-display {
+        height: 11rem !important;
+    }
+
+    #display {
+        font-size: 4rem !important;
+    }
+
+    #equation-display {
+        font-size: 2rem !important;
     }
 }
 
@@ -117,7 +147,10 @@ footer {
 
 .answer-display {
     position: relative;
+    height: 9rem;
     margin-bottom: 1.5rem;
+    border: 1px solid var(--black-color);
+    border-radius: 2px;
 }
 
 #equation-display {
@@ -133,12 +166,11 @@ footer {
 
 #display {
     width: 100%;
-    height: 9rem;
     font-size: 3.4rem;
     text-align: right;
-    padding: 3.5rem 8px 5px;
-    border: 1px solid;
-    border-radius: 2px;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
 }
 
 .buttons {
